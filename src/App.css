@@ -23,6 +23,7 @@ h1 {
     display: flex;
     align-items: center;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 .country-list {
@@ -40,7 +41,6 @@ h1 {
     width: 50px;
     padding-right: 10px;
 }
-
 
 .country-info {
     padding: 15px;

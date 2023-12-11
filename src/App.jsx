@@ -30,11 +30,11 @@ function App() {
         }
     }
 
-
-const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
     const hideButton = () => {
         setShow(true);
     };
+
 
     return (
         <>
@@ -44,9 +44,8 @@ const [show, setShow] = useState(false);
             {!show && <button type='button' className='get-list-button' onClick={() => {
                 fetchCountries();
                 hideButton();
-            }}
-            >
-                Get countries!
+            }}>
+                Get all countries!
             </button>}
             {error && <p>{error}</p>}
             {countries.length > 0 && <ul className='country-list'>
@@ -57,7 +56,6 @@ const [show, setShow] = useState(false);
                         <p>Has a population of {country.population} people</p>
                     </li>
                 })}
-
             </ul>
             }
             </main>
@@ -66,4 +64,3 @@ const [show, setShow] = useState(false);
 }
 
 export default App
-
